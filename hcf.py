@@ -8,11 +8,11 @@ else:
     b=18
     print("No user provided")
     print("HCF and LCM of two numbers")
-    def hcf(a,b):
-        while a:
-            a,b=b,a%b
-            return a
-    h=hcf(a,b)
-    l=(a*b)//h
-    print("HCF=",h)
-    print("LCM=",l)        
+def hcf(a,b):
+    while a:
+        a,b=b,a%b
+        return a
+h=hcf(a,b)
+l=(a*b)//h
+print("HCF=",h)
+print("LCM=",l)        
