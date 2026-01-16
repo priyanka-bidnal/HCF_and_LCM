@@ -1,4 +1,5 @@
 import sys
+import math
 if len(sys.argv)==3:
     a=int(sys.argv[1])
     b=int(sys.argv[2])
@@ -8,11 +9,7 @@ else:
     b=18
     print("No user provided")
     print("HCF and LCM of two numbers")
-def hcf(a,b):
-    while a:
-        a,b=b,a%b
-        return a
-h=hcf(a,b)
+h=math.gcd(a,b)
 l=(a*b)//h
 print("HCF=",h)
 print("LCM=",l)        
